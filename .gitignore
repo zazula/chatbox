@@ -175,3 +175,18 @@ electron-builder.env
 **/routeTree.gen.ts
 
 .env.sentry-build-plugin
+
+# Local build/Electron/macOS add-ons
+.history/
+.turbo/
+.stylelintcache
+# Ensure nested app node_modules are ignored explicitly
+release/app/node_modules/
+
+# iOS/Xcode build products
+ios/build/
+ios/DerivedData/
+ios/Pods/
+ios/**/*.xcworkspace/xcuserdata/
+ios/**/*.xcodeproj/project.xcworkspace/xcuserdata/
+ios/**/xcuserdata/
